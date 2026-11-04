@@ -1,0 +1,17 @@
+[project]
+name = "reservix-crypto"
+version = "1.0.0"
+description = "Целостность и неотказуемость данных Reservix: ЭП ГОСТ Р 34.10-2012 и цепочка HMAC журнала аудита"
+requires-python = ">=3.11"
+dependencies = [
+    "gostcrypto>=1.2.5",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.0",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
